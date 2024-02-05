@@ -70,7 +70,7 @@ import MyAlgoConnect from "@randlabs/myalgo-connect";
 import { useUserStore } from "~/stores/user";
 import { storeToRefs } from "pinia";
 
-import { setupNearWallet } from "@near-wallet-selector/near-wallet";
+//import { setupNearWallet } from "@near-wallet-selector/near-wallet";
 import { setupMyNearWallet } from "@near-wallet-selector/my-near-wallet";
 import { setupSender } from "@near-wallet-selector/sender";
 import { setupHereWallet } from "@near-wallet-selector/here-wallet";
@@ -82,7 +82,7 @@ import { setupWelldoneWallet } from "@near-wallet-selector/welldone-wallet";
 // import {setupLedger} from "@near-wallet-selector/ledger";
 import { setupNearFi } from "@near-wallet-selector/nearfi";
 import { setupCoin98Wallet } from "@near-wallet-selector/coin98-wallet";
-import { setupOptoWallet } from "@near-wallet-selector/opto-wallet";
+//import { setupOptoWallet } from "@near-wallet-selector/opto-wallet";
 import { setupModal } from "@near-wallet-selector/modal-ui";
 import { setupWalletSelector } from "@near-wallet-selector/core";
 
@@ -374,7 +374,7 @@ async function loginWithNear() {
     const selector = await setupWalletSelector({
         network: "testnet",
         modules: [
-            setupNearWallet(),
+            // setupNearWallet(),
             setupMyNearWallet(),
             setupSender(),
             setupHereWallet(),
@@ -386,7 +386,7 @@ async function loginWithNear() {
             // setupLedger(),
             setupNearFi(),
             setupCoin98Wallet(),
-            setupOptoWallet()
+            // setupOptoWallet()
         ]
     });
 
